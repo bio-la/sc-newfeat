@@ -1,0 +1,21 @@
+# sc-newfeat
+single cell new features identification
+
+# requirements
+- samtools (1.31)
+- java (1.7)
+- bedtools2 (intersectBed and fastFromBed)
+- macs2
+- python 2.7
+- homer annotatePeaks.pl script
+
+# Sample test command line
+perl sc-newfeat.pl -bam /share/apps/local/ipmc-sc-newfeat/sample/hg19.chr5.54to55mb.bam -outdir /share/apps/local/ipmc-sc-newfeat/sampledir/ -build hg19chr5
+
+Note that you need to provide chromosome 5 of hg19 build in the config directory under reference hg19chr5.fa
+
+
+
+
+
+
