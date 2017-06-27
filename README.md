@@ -1,5 +1,5 @@
 # sc-newfeat
-single cell new features identification
+Single Cell new features identification on 10x libraries
 
 # requirements
 - samtools (1.31)
@@ -12,7 +12,7 @@ single cell new features identification
 # Running test sample
 1. you need to provide chromosome 5 of hg19 build in the config directory under reference hg19chr5.fa
 2. command line is sc-newfeat.pl -bam <install dir>/sample/hg19.chr5.54to55mb.bam -outdir <install dir>/outdir/ -build hg19chr5
-3. diff <install dir>/outdir/sc-newfeat.gtf <install dir>/sampledir/sc-newfeat.gtf should return nothing
+3. diff <install dir>/outdir/sc-newfeat.gtf <install dir>/sampledir/sc-newfeat.gtf should return nothing (it generates a new version of the gtf with the new annotations found, that's why they shouldn't)
 
 # Version History
 
