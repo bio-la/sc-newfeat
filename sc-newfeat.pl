@@ -71,8 +71,6 @@ sub process {
 	my $homerbuild		= $parameters->{build};
 	if($parameters->{build} eq "hg19chr5"){ $homerbuild="hg19"; }
 	
-	print "coucou\n";
-	
 	if(!-e $gtf_exons || !-e $fasta_build){
 		print "\n\n#-----\nError: no gtf of fasta in directory for build specified (".$parameters->{build}.")\n#-----\n";
 		exit;
